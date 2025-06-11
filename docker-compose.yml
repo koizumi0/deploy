@@ -4,4 +4,3 @@ services:
     image: koizumi0/docker-cicd:202506111440
     ports:
       - "8080:80"
-      
