@@ -3,9 +3,8 @@ name: Docker Compose Workflow
 on:
   push:
     branches:
-      -main
-
-  jobs:
+      - main
+jobs:
     docker-compose:
       runs-on: self-hosted
 
