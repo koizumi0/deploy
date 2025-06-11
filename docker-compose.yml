@@ -4,22 +4,4 @@ services:
     image: koizumi0/docker-cicd:202506111440
     ports:
       - "8080:80"
-
-name: Docker Compose Workflow
-
-on:
-  push:
-    branches:
-      -main
-
-  jobs:
-    docker-compose:
-      runs-on: self-hosted
-
-      steps:
-       - name: Checkout respository
-       - uses: actions/checkout@v3
-
-       - name: Build and start services
-       - run: docker-compose up -d
-       
+      
