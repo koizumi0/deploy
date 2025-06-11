@@ -9,7 +9,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout respository
+      - name: Checkout repository
       - uses: actions/checkout@v3
 
       - name: Build and start services
